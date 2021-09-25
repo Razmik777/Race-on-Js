@@ -1,0 +1,19 @@
+{
+  "name": "needforjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.4",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "dependencies": {
+    "electron-packager": "^15.2.0"
+  }
+}

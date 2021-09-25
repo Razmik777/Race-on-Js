@@ -1,0 +1,116 @@
+:root{
+	--height-elem: 100px; /* Размер машинок */
+}
+
+@import 'reset.css';
+
+.hide{
+	display: none;
+}
+
+.score{
+	position: fixed;
+	top: 8px;
+    left: 807px;
+    width: 350px;
+	height: 50px;
+	font-size: 20px;
+	font-family: sans-serif;
+	background: #fff;
+	text-align: center;
+	padding: 1rem 0;
+	color: #000;
+	z-index: 200;
+}
+
+.game{
+	display: flex;
+	height: 100%;
+}
+
+.start{
+	position: fixed;
+	top: 9px;
+	left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	width: 440px;
+	height: cacl(100px - 2rem);
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 1rem 0;
+	box-shadow: -4px 2px 4px 1px #ccc;
+	text-transform: uppercase;
+	z-index: 200;
+}
+
+.text{
+	text-align: center;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.btn{
+	background-color: orange;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	outline: none;
+	color: #000;
+}
+.btn:not(:last-child){
+	margin-right: 12px;
+}
+.btn:last-child{
+	margin-right: 12px;
+}
+
+.btn:disabled{
+	background-color: #ccc;
+	color: #fff;
+}
+
+.gameArea{
+	position: relative;
+	width: 350px;
+	min-height: 100vh;
+	margin: auto;
+	background: #696969;
+	overflow: hidden;
+}
+
+.car, .enemy{
+	position: absolute;
+	left: 150px;
+	bottom: 10px;
+	width: calc(var(--height-elem) / 2);
+	height: var(--height-elem);
+	background: url('images/player.png') center / contain no-repeat;
+	
+}
+
+
+.line{
+	position: absolute;
+	width: 10px;
+	height: calc(var(--height-elem) / 2);
+	background: #fff;
+	left: 170px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+
