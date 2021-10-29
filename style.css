@@ -90,9 +90,7 @@
 	width: calc(var(--height-elem) / 2);
 	height: var(--height-elem);
 	background: url('images/player.png') center / contain no-repeat;
-	
 }
-
 
 .line{
 	position: absolute;
@@ -111,6 +109,21 @@
 	height: 1px !important; 
 	width: 1px !important; 
 	overflow: hidden;
+}
+
+@media (max-width:1250px) {
+	.score {
+		width: 215px;
+	}
+
+	.start {
+		width: 317px;
+	}
+
+	.text {
+		font-size: 12px;
+		font-weight: 600;
+	}
 }
 
 
